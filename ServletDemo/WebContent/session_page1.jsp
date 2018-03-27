@@ -16,7 +16,16 @@
   session.setAttribute("username", "admin"); 
   session.setAttribute("password", "123456");
   session.setAttribute("age", 20);
-   out.print(d);
+  //s设置session当前生成最大期限单位秒
+  session.setMaxInactiveInterval(10);
   %>
+  
+  Session创建时间：<%=sdf.format(d)%><br>    
+  Session的ID编号：<%=session.getId()%><BR>
+       从Session中获取用户名：<%=session.getAttribute("username") %><br>
+       
+  <a href="session_page2.jsp" target="_blank">跳转到Session_page2.jsp</a>     
+      
+  
 </body>
 </html>
