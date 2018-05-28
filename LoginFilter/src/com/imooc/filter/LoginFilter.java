@@ -55,10 +55,10 @@ public class LoginFilter implements Filter{
 		}
 		
 		
-	 if(req.getRequestURI().indexOf("login.jsp")!=-1||req.getRequestURI().indexOf("LoginServlet")!=-1){
-		 chain.doFilter(request,response);
-		 return;
-	 }
+//	 if(req.getRequestURI().indexOf("login.jsp")!=-1||req.getRequestURI().indexOf("LoginServlet")!=-1){
+//		 chain.doFilter(request,response);
+//		 return;
+//	 }
 		
 		if(session.getAttribute("username")!=null){
 			chain.doFilter(request,response);

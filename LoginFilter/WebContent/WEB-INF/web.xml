@@ -22,11 +22,11 @@
 		<init-param>
 			<param-name>noLoginPaths</param-name>
 
-			<param-value>login.jsp;fail.jsp;LoginServlet</param-value>
+			<param-value>login.jsp;LoginServlet</param-value>
 
 		</init-param>
       <init-param>
-       <param-name>cahrset</param-name>
+       <param-name>charset</param-name>
       <param-value>UTF-8</param-value>
       </init-param>
 
